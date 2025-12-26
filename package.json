@@ -6,7 +6,8 @@
     "server": "npm --prefix server run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "git:init": "node ./tools/git-commit.js --init",
-    "git:commit": "node ./tools/git-commit.js"
+    "git:commit": "node ./tools/git-commit.js",
+    "git:auto-commit": "node ./tools/auto-commit.js"
   },
   "devDependencies": {
     "concurrently": "^8.0.1"

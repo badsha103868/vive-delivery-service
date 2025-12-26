@@ -1,0 +1,14 @@
+{
+  "name": "vive-delivery-service",
+  "private": true,
+  "scripts": {
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "git:init": "node ./tools/git-commit.js --init",
+    "git:commit": "node ./tools/git-commit.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
